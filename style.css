@@ -40,18 +40,6 @@ h1 {
     background-color: rgb(39, 39, 39);
 }
 
-.red {
-    background-color: red;
-}
-
-.yellow {
-    background-color: yellow;
-}
-
-.green {
-    background-color: rgb(2, 189, 2);
-}
-
 .buttons {
     width: 100%;
     display: flex;
@@ -70,19 +58,19 @@ h1 {
     cursor: pointer;
 }
 
-.btn-red {
+.red {
     background-color: #ff0000;
 }
 
-.btn-yellow {
+.yellow {
     background-color: #ffff00;
 }
 
-.btn-green {
+.green {
     background-color: #00ff00;
 }
 
-.btn-grey {
+.grey {
     background-color: rgb(180, 177, 177);
 }
 
