@@ -37,7 +37,7 @@ function acenderLuz(red, yellow, green) {
 function acenderLuzManual(red, yellow, green) {
     acenderLuz(red, yellow, green);
     automaticMode = false;
-}
+} 
 
 function modoAutomatico() {
     if (automaticMode) {
@@ -51,16 +51,16 @@ function modoAutomatico() {
     }
 }
 
-btnRed.addEventListener("click", function() {
+btnRed.addEventListener("click", function () {
     acenderLuzManual(true, false, false);
 });
 
-btnYellow.addEventListener("click", function() {
+btnYellow.addEventListener("click", function () {
     acenderLuzManual(false, true, false);
 });
 
-btnGreen.addEventListener("click", function() {
-    acenderLuz(false, false, true);
+btnGreen.addEventListener("click", function () {
+    acenderLuzManual(false, false, true);
 })
 
 btnAuto.addEventListener("click", function() {
@@ -73,26 +73,6 @@ btnAuto.addEventListener("click", function() {
         clearInterval(automaticInterval);
     }
 })
-
-
-/*btnAuto.addEventListener("click", function() {
-    automaticMode = !automaticMode;
-
-    if(automaticMode) {
-        automaticInterval = setInterval(function() {
-            acenderLuz(true, false, false);
-            setTimeout(function() {
-                acenderLuz(false, true, false);
-            }, 1000);
-            setTimeout(function() {
-                acenderLuz(false, false,true);
-            }, 2000);
-        }, 3000);
-    } else {
-        clearInterval(automaticInterval);
-    }
-})
-*/
 
 /*
 * classList => Manipula as classes
